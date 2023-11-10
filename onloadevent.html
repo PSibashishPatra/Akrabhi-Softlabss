@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="checkyourCookies()">
+
+<p id="OnloadTest"></p>
+
+<script>
+
+function checkyourCookies() {
+
+  var text = "";
+
+  if (navigator.cookieEnabled == true) {
+
+    text = "your web page Cookies are active.";
+
+  }
+  else {
+
+    text = "your web page Cookies are not active.";
+
+  }
+
+  document.getElementById("OnloadTest").innerHTML = text;
+
+}
+
+</script>
+    
+</body>
+</html>
