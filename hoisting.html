@@ -9,10 +9,24 @@ x = 5;
 
 elem = document.getElementById("demo");
 elem.innerHTML = x;
-
 var x;
+
+var p = 5; // Initialize x
+var y = 7; // Initialize y
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = p + " " + y;
+
+var s = 5;  // Initialize x
+
+elem = document.getElementById("demo");      // Find an element 
+elem.innerHTML = "s is " + s + " and r is " + r;  // Display x and y
+
+var r = 7; 
 </script>
-Note:
-    The declaration occurs after its use is called as hoisting
+JavaScript Declarations are Hoisted <br>
+JavaScript Initializations are Not Hoisted <br>
+<b>JavaScript only hoists declarations, not initializations. </b> <br>
+
 </body>
 </html> 
